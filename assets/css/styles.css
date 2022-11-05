@@ -1,0 +1,39 @@
+:root {
+    --olive: #999b84;
+    --cream: #f4eeed;
+    --tan: #efd9d1;
+    --brownish: #ddb7ab;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+}
+
+nav.navbar {
+    background-color: var(--brownish);
+}
+
+header#header {
+    padding-top: 80px;
+    text-align: center;
+}
+
+header#header div img {
+    height: 400px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 10px solid var(--brownish)
+}
+
+section#contact {
+    background-color: var(--olive);
+    color: var(--cream);
+}

@@ -46,10 +46,41 @@ section#about {
     padding: 20px;
 }
 
-section#skills,
-section#services {
+section#separator {
+    background-image: url("../images/pexels-mali-maeder-54257.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 200px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+section#skills {
     background-color: var(--brownish);
     padding: 20px;
+}
+
+section#services,
+section#gallery {
+    padding: 20px;
+}
+
+#gallery #imgOne {
+    min-height: 270px;
+    background-size: cover;
+    background-image: url("../images/pexels-burak-the-weekender-187041.jpg");
+}
+
+#gallery #imgTwo {
+    min-height: 270px;
+    background-size: cover;
+    background-image: url("../images/pexels-lukas-590016.jpg");
+}
+
+#gallery #imgThree {
+    min-height: 270px;
+    background-size: cover;
+    background-image: url("../images/pexels-pixabay-270637.jpg");
 }
 
 section#experience,
@@ -76,9 +107,17 @@ section#education p {
     #eduex #skills {
         min-height: 405px;
     }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #eduex {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 720px) {
+
     #eduex #skills {
         min-height: initial;
         margin-bottom: 20px;

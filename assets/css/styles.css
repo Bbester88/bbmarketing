@@ -24,16 +24,68 @@ header#header {
     text-align: center;
 }
 
-header#header div img {
+header#header div img#leadTwo {
     height: 400px;
     width: auto;
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    border: 10px solid var(--brownish)
+    border: 10px solid var(--olive)
 }
 
-section#contact {
+header#header img#BBheaderText {
+    width: 300px;
+    height: auto;
+    margin: -10px;
+    padding: 0;
+}
+
+section#about {
     background-color: var(--olive);
     color: var(--cream);
+    padding: 20px;
+}
+
+section#skills,
+section#services {
+    background-color: var(--brownish);
+    padding: 20px;
+}
+
+section#experience,
+section#education {
+    padding: 20px;
+    background-color: var(--tan);
+}
+
+section#experience p,
+section#education p {
+    padding: 0;
+    margin: 0;
+}
+
+#eduex {
+    margin-top: 20px;
+}
+
+#eduex #skills {
+    min-height: 542px;
+}
+
+@media screen and (min-width: 1000px) {
+    #eduex #skills {
+        min-height: 405px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #eduex #skills {
+        min-height: initial;
+        margin-bottom: 20px;
+    }
+
+    #services {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
